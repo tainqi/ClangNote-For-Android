@@ -1,0 +1,72 @@
+<View id="1" did="0" type="EditText">
+<ppt>width=-1
+height=500dp
+text=</ppt>
+<event></event>
+</View>
+<View id="2" did="0" type="Button">
+<ppt>width=-2
+height=-2
+text=save
+layout_margintop=15dp
+layout_marginleft=119dp</ppt>
+<event><eventItme type="clicki">utw(null,"温馨提示","是否覆盖","覆盖","取消",false,v)
+{
+s kp = "ClangNoteCPP"
+.标题
+ug(1,"text",pl)
+.内容
+t()
+{
+f(kp=="")
+f(pl=="")
+{
+ufnsui()
+{
+tw("请输入内容")
+}
+}
+else
+{
+s fh="%"
+.%
+s ko="ClangNote"
+s re="CPP"
+.保存数据的文件夹
+s rt="/"
+s tc=".cpp"
+s f= "utf-8"
+
+time(2,bf)
+time(3,fb)
+s gp="「"
+s pg="」"
+s og="（"
+s go="）"
+s ge="\n"
+s yp="创建时间:"
+ss(yp+ge+gp+bf+pg+ge+og+fb+go+ge+ge+pl,vcc)
+.ss(ge+gppg+ge+oggo+ge+ge+pl,vcc)
+syso(vcc)
+.文件后缀
+ss(fh+ko+rt+re+rt+kp+tc,cv)
+syso(cv)
+.%+标题+文件后缀,赋值cv
+fw(cv,pl)
+fn pt.tp()
+ufnsui()
+{
+tw("已保存")
+uigo("mian.iyu")
+end()
+}
+}
+}
+
+}
+else
+{
+
+}</eventItme></event>
+</View>
+<UIEventset></UIEventset>
